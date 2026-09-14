@@ -1,0 +1,875 @@
+{
+  "tittel": "Et vedtak ",
+  "body": [
+    {
+      "type": "overskrift",
+      "nivå": 1,
+      "overskrift": "Vedtak"
+    },
+    {
+      "type": "overskrift",
+      "nivå": 2,
+      "overskrift": "Opplysninger om behandlingen"
+    },
+    {
+      "type": "liste",
+      "liste": [
+        [
+          "Referanse",
+          "7f2bf3c1-cf70-4456-9f4a-c7e4c65e6782"
+        ],
+        [
+          "Opprettet",
+          "05. august 2026 13:46:32.021"
+        ],
+        [
+          "Årsak til opprettelse",
+          "Søknad"
+        ],
+        [
+          "Vurderingsbehov",
+          "Mottatt søknad, sist oppdatert 05. august 2026 13:46:32.014."
+        ],
+        [
+          "Vedtakstidspunkt",
+          "05. august 2026 13:46:36.182"
+        ],
+        [
+          "Beslutter",
+          "BESLUTTER"
+        ],
+        [
+          "Kvalitetssikrer",
+          "KVALITETSSIKRER"
+        ],
+        [
+          "Saksbehandlere",
+          "SAKSBEHANDLER."
+        ]
+      ]
+    },
+    {
+      "type": "overskrift",
+      "nivå": 2,
+      "overskrift": "Grunnlaget for størrelsen på AAP"
+    },
+    {
+      "type": "liste",
+      "liste": [
+        [
+          "År 2023",
+          "Inntekt: kr 200 000,00 (1,721 G). Grunnbeløp: kr 116 239,00. 6G-begrenset: 1,721 G (nei)."
+        ],
+        [
+          "År 2024",
+          "Inntekt: kr 200 000,00 (1,636 G). Grunnbeløp: kr 122 225,00. 6G-begrenset: 1,636 G (nei)."
+        ],
+        [
+          "År 2025",
+          "Inntekt: kr 200 000,00 (1,561 G). Grunnbeløp: kr 128 116,00. 6G-begrenset: 1,561 G (nei)."
+        ],
+        [
+          "Gjennomsnitt 3 år",
+          "1,639 G"
+        ],
+        [
+          "Gjennomsnitt valgt",
+          "ja"
+        ],
+        [
+          "Endelig grunnlag",
+          "1,639 G"
+        ]
+      ]
+    },
+    {
+      "type": "overskrift",
+      "nivå": 2,
+      "overskrift": "Rettighetstype"
+    },
+    {
+      "type": "tabell",
+      "kolonner": [
+        "Periode (fom – tom)",
+        "Rettighetstype",
+        "Hjemmel"
+      ],
+      "rader": [
+        [
+          "05.08.2026 – 06.08.2029",
+          "Bistandsbehov",
+          "§ 11-6"
+        ]
+      ]
+    },
+    {
+      "type": "overskrift",
+      "nivå": 2,
+      "overskrift": "Vurderinger av § 11-5"
+    },
+    {
+      "type": "overskrift",
+      "nivå": 3,
+      "overskrift": "Vurdering brukt for 05. august 2026 – 01. januar 2999 i vedtak fattet 05. august 2026"
+    },
+    {
+      "type": "liste",
+      "liste": [
+        [
+          "Vurdert av",
+          "SAKSBEHANDLER"
+        ],
+        [
+          "Vurderingen gjelder fra og med",
+          "05. august 2026"
+        ],
+        [
+          "Vurderingen gjelder til og med",
+          "Ikke satt"
+        ]
+      ]
+    },
+    {
+      "type": "liste",
+      "liste": [
+        [
+          "Begrunnelse",
+          "Er syk nok"
+        ]
+      ]
+    },
+    {
+      "type": "liste",
+      "liste": [
+        [
+          "Har skade, sykdom eller lyte",
+          "ja"
+        ],
+        [
+          "Skade, sykdom, eller lyte er vesentlig del",
+          "ja"
+        ],
+        [
+          "Nedsettelse i arbeidsevne er mer enn halvparten",
+          "ja"
+        ],
+        [
+          "Er nedsettelse i arbeidsevne mer enn yrkesskadegrense",
+          "ikke vurdert"
+        ],
+        [
+          "Hoveddiagnose",
+          "A03 (ICPC2)"
+        ],
+        [
+          "Bidiagnoser",
+          "Ikke valgt"
+        ],
+        [
+          "Nedsatt arbeidsevne",
+          "Ja"
+        ]
+      ]
+    },
+    {
+      "type": "overskrift",
+      "nivå": 2,
+      "overskrift": "Bistandsbehov (§ 11-6)"
+    },
+    {
+      "type": "overskrift",
+      "nivå": 3,
+      "overskrift": "Vurdering brukt for 05. august 2026 – 01. januar 2999 i vedtak fattet 05. august 2026"
+    },
+    {
+      "type": "liste",
+      "liste": [
+        [
+          "Begrunnelse",
+          "Trenger hjelp fra nav"
+        ]
+      ]
+    },
+    {
+      "type": "liste",
+      "liste": [
+        [
+          "Vurdert av",
+          "SAKSBEHANDLER"
+        ],
+        [
+          "Behov for aktiv behandling",
+          "ja"
+        ],
+        [
+          "Behov for arbeidsrettet tiltak",
+          "nei"
+        ],
+        [
+          "Behov for annen oppfølging",
+          "ikke vurdert"
+        ],
+        [
+          "Har bistandsbehov",
+          "ja"
+        ]
+      ]
+    },
+    {
+      "type": "overskrift",
+      "nivå": 2,
+      "overskrift": "Vedtakslengde"
+    },
+    {
+      "type": "liste",
+      "liste": [
+        [
+          "Sluttdato",
+          "04. august 2027"
+        ],
+        [
+          "Utvidet med",
+          "Første år"
+        ],
+        [
+          "Vurdert manuelt",
+          "nei"
+        ],
+        [
+          "Vurdert av",
+          "Kelvin"
+        ]
+      ]
+    },
+    {
+      "type": "liste",
+      "liste": [
+        [
+          "Begrunnelse",
+          "Automatisk vurdert"
+        ]
+      ]
+    },
+    {
+      "type": "overskrift",
+      "nivå": 2,
+      "overskrift": "Stønadsperiode / rettighetsperiode"
+    },
+    {
+      "type": "overskrift",
+      "nivå": 3,
+      "overskrift": "Vurdering"
+    },
+    {
+      "type": "liste",
+      "liste": [
+        [
+          "Begrunnelse",
+          "Automatisk vurdering"
+        ]
+      ]
+    },
+    {
+      "type": "liste",
+      "liste": [
+        [
+          "Vurdert av",
+          "Kelvin"
+        ],
+        [
+          "Relevant kravtype",
+          "Ny stønadsperiode"
+        ],
+        [
+          "Startdato",
+          "05. august 2026"
+        ],
+        [
+          "Hatt ordinær siste 52 uker",
+          "nei"
+        ],
+        [
+          "Gjenværende kvote",
+          "nei"
+        ]
+      ]
+    },
+    {
+      "type": "overskrift",
+      "nivå": 2,
+      "overskrift": "Refusjonskrav"
+    },
+    {
+      "type": "overskrift",
+      "nivå": 3,
+      "overskrift": "Vurdering"
+    },
+    {
+      "type": "liste",
+      "liste": [
+        [
+          "Vurdert av",
+          "SAKSBEHANDLER"
+        ],
+        [
+          "Har krav",
+          "ja"
+        ],
+        [
+          "NAV-kontor",
+          ""
+        ],
+        [
+          "Fra og med",
+          "Ikke satt"
+        ],
+        [
+          "Til og med",
+          "Ikke satt"
+        ]
+      ]
+    },
+    {
+      "type": "overskrift",
+      "nivå": 2,
+      "overskrift": "Institusjonsopphold"
+    },
+    {
+      "type": "overskrift",
+      "nivå": 2,
+      "overskrift": "Forutgående medlemskap"
+    },
+    {
+      "type": "overskrift",
+      "nivå": 3,
+      "overskrift": "Vurdering brukt for 05. august 2026 – 01. januar 2999 i vedtak fattet 05. august 2026"
+    },
+    {
+      "type": "liste",
+      "liste": [
+        [
+          "Begrunnelse",
+          "Forutgående medlemskap ok"
+        ]
+      ]
+    },
+    {
+      "type": "liste",
+      "liste": [
+        [
+          "Vurdert av",
+          "SAKSBEHANDLER"
+        ],
+        [
+          "Har forutgående medlemskap",
+          "ja"
+        ],
+        [
+          "Var medlem med nedsatt arbeidsevne",
+          "ikke vurdert"
+        ],
+        [
+          "Unntak fra maks 5 år",
+          "ikke vurdert"
+        ]
+      ]
+    },
+    {
+      "type": "overskrift",
+      "nivå": 2,
+      "overskrift": "Oppholdskrav"
+    },
+    {
+      "type": "tabell",
+      "kolonner": [
+        "Periode (fom – tom)",
+        "Land",
+        "Oppfylt",
+        "Begrunnelse",
+        "Vurdert av"
+      ],
+      "rader": [
+        [
+          "05.08.2026 – 01.01.2999",
+          "Norge",
+          "ja",
+          "Oppholdskrav ok",
+          "SAKSBEHANDLER"
+        ]
+      ]
+    },
+    {
+      "type": "overskrift",
+      "nivå": 2,
+      "overskrift": "Beregningstidspunkt og yrkesskadebeløp"
+    },
+    {
+      "type": "overskrift",
+      "nivå": 3,
+      "overskrift": "Beregningstidspunkt"
+    },
+    {
+      "type": "liste",
+      "liste": [
+        [
+          "Begrunnelse",
+          "Trenger hjelp fra Nav"
+        ]
+      ]
+    },
+    {
+      "type": "liste",
+      "liste": [
+        [
+          "Dato for nedsatt arbeidsevne",
+          "05. august 2026"
+        ],
+        [
+          "Årsak",
+          "ikke vurdert"
+        ],
+        [
+          "Ytterligere nedsatt begrunnelse",
+          "—"
+        ],
+        [
+          "Ytterligere nedsatt dato",
+          "Ikke satt"
+        ],
+        [
+          "Vurdert av",
+          "SAKSBEHANDLER"
+        ]
+      ]
+    },
+    {
+      "type": "overskrift",
+      "nivå": 2,
+      "overskrift": "Vilkårsvurderinger"
+    },
+    {
+      "type": "overskrift",
+      "nivå": 3,
+      "overskrift": "Aldersvilkåret (§ 11-4)"
+    },
+    {
+      "type": "liste",
+      "liste": [
+        [
+          "05. august 2026 – 31. januar 2067",
+          "Ny periode vurdert. Utfall: OPPFYLT. Manuell vurdering: false.  Begrunnelse: —."
+        ],
+        [
+          "01. februar 2067 – 01. januar 2999",
+          "Ny periode vurdert. Utfall: IKKE_OPPFYLT. Manuell vurdering: false. Avslagsårsak: BRUKER_OVER_67, § 11-4 1. ledd. Begrunnelse: —."
+        ]
+      ]
+    },
+    {
+      "type": "overskrift",
+      "nivå": 3,
+      "overskrift": "Lovvalg (§ 2)"
+    },
+    {
+      "type": "liste",
+      "liste": [
+        [
+          "05. august 2026 – 01. januar 2999",
+          "Ny periode vurdert. Utfall: OPPFYLT. Manuell vurdering: false.  Begrunnelse: —."
+        ]
+      ]
+    },
+    {
+      "type": "overskrift",
+      "nivå": 3,
+      "overskrift": "Sykdomsvilkåret (§ 11-5)"
+    },
+    {
+      "type": "liste",
+      "liste": [
+        [
+          "05. august 2026 – 01. januar 2999",
+          "Ny periode vurdert. Utfall: OPPFYLT. Manuell vurdering: false.  Begrunnelse: —."
+        ]
+      ]
+    },
+    {
+      "type": "overskrift",
+      "nivå": 3,
+      "overskrift": "Bistandsvilkåret (§ 11-6)"
+    },
+    {
+      "type": "liste",
+      "liste": [
+        [
+          "05. august 2026 – 01. januar 2999",
+          "Ny periode vurdert. Utfall: OPPFYLT. Manuell vurdering: true.  Begrunnelse: —."
+        ]
+      ]
+    },
+    {
+      "type": "overskrift",
+      "nivå": 3,
+      "overskrift": "Overgangarbeidvilkåret (§ 11-17)"
+    },
+    {
+      "type": "liste",
+      "liste": [
+        [
+          "05. august 2026 – 01. januar 2999",
+          "Ny periode vurdert. Utfall: IKKE_VURDERT. Manuell vurdering: false.  Begrunnelse: —."
+        ]
+      ]
+    },
+    {
+      "type": "overskrift",
+      "nivå": 3,
+      "overskrift": "Overganguførevilkåret (§ 11-18)"
+    },
+    {
+      "type": "liste",
+      "liste": [
+        [
+          "05. august 2026 – 01. januar 2999",
+          "Ny periode vurdert. Utfall: IKKE_VURDERT. Manuell vurdering: false.  Begrunnelse: —."
+        ]
+      ]
+    },
+    {
+      "type": "overskrift",
+      "nivå": 3,
+      "overskrift": "Medlemskap (§ 11-2)"
+    },
+    {
+      "type": "liste",
+      "liste": [
+        [
+          "05. august 2026 – 01. januar 2999",
+          "Ny periode vurdert. Utfall: OPPFYLT. Manuell vurdering: true.  Begrunnelse: —."
+        ]
+      ]
+    },
+    {
+      "type": "overskrift",
+      "nivå": 3,
+      "overskrift": "Grunnlaget (§ 11-19)"
+    },
+    {
+      "type": "liste",
+      "liste": [
+        [
+          "05. august 2026 – 01. januar 2999",
+          "Ny periode vurdert. Utfall: OPPFYLT. Manuell vurdering: false.  Begrunnelse: —."
+        ]
+      ]
+    },
+    {
+      "type": "overskrift",
+      "nivå": 3,
+      "overskrift": "Inntektsbortfall (§ 11-4 2. ledd)"
+    },
+    {
+      "type": "liste",
+      "liste": [
+        [
+          "05. august 2026 – 01. januar 2999",
+          "Ny periode vurdert. Utfall: OPPFYLT. Manuell vurdering: false.  Begrunnelse: Bruker under 62 år, eller har hatt inntekt siste år over 1G, eller har hatt inntekt over 3G siste tre år.."
+        ]
+      ]
+    },
+    {
+      "type": "overskrift",
+      "nivå": 3,
+      "overskrift": "Ordinær kvote (§ 11-12 1. ledd)"
+    },
+    {
+      "type": "liste",
+      "liste": [
+        [
+          "05. august 2026 – 06. august 2029",
+          "Ny periode vurdert. Utfall: OPPFYLT. Manuell vurdering: false.  Begrunnelse: —."
+        ],
+        [
+          "07. august 2029 – 31. januar 2067",
+          "Ny periode vurdert. Utfall: IKKE_OPPFYLT. Manuell vurdering: false. Avslagsårsak: ORDINÆRKVOTE_BRUKT_OPP, § 11-12. Begrunnelse: —."
+        ],
+        [
+          "01. februar 2067 – 01. januar 2999",
+          "Ny periode vurdert. Utfall: IKKE_RELEVANT. Manuell vurdering: false.  Begrunnelse: —."
+        ]
+      ]
+    },
+    {
+      "type": "overskrift",
+      "nivå": 3,
+      "overskrift": "Sykepengeerstatning kvote (§ 11-13 1. ledd)"
+    },
+    {
+      "type": "liste",
+      "liste": [
+        [
+          "05. august 2026 – 01. januar 2999",
+          "Ny periode vurdert. Utfall: IKKE_RELEVANT. Manuell vurdering: false.  Begrunnelse: —."
+        ]
+      ]
+    },
+    {
+      "type": "overskrift",
+      "nivå": 3,
+      "overskrift": "Student (§ 11-14)"
+    },
+    {
+      "type": "liste",
+      "liste": [
+        [
+          "05. august 2026 – 01. januar 2999",
+          "Ny periode vurdert. Utfall: IKKE_VURDERT. Manuell vurdering: false.  Begrunnelse: —."
+        ]
+      ]
+    },
+    {
+      "type": "overskrift",
+      "nivå": 3,
+      "overskrift": "Sykepengeerstatning (§ 11-13)"
+    },
+    {
+      "type": "liste",
+      "liste": [
+        [
+          "05. august 2026 – 01. januar 2999",
+          "Ny periode vurdert. Utfall: IKKE_OPPFYLT. Manuell vurdering: false. Avslagsårsak: IKKE_RETT_PA_SYKEPENGEERSTATNING, § 11-13. Begrunnelse: —."
+        ]
+      ]
+    },
+    {
+      "type": "overskrift",
+      "nivå": 3,
+      "overskrift": "Oppholdskrav (§ 11-3)"
+    },
+    {
+      "type": "liste",
+      "liste": [
+        [
+          "05. august 2026 – 01. januar 2999",
+          "Ny periode vurdert. Utfall: OPPFYLT. Manuell vurdering: true.  Begrunnelse: Oppholdskrav ok."
+        ]
+      ]
+    },
+    {
+      "type": "overskrift",
+      "nivå": 3,
+      "overskrift": "Straffegjennomføring (§ 11-26)"
+    },
+    {
+      "type": "liste",
+      "liste": [
+        [
+          "05. august 2026 – 01. januar 2999",
+          "Ny periode vurdert. Utfall: OPPFYLT. Manuell vurdering: false.  Begrunnelse: —."
+        ]
+      ]
+    },
+    {
+      "type": "overskrift",
+      "nivå": 3,
+      "overskrift": "Samordning (§ 11-27)"
+    },
+    {
+      "type": "avsnitt",
+      "avsnitt": "Ingen vurderinger."
+    },
+    {
+      "type": "overskrift",
+      "nivå": 3,
+      "overskrift": "Samordning annen lovgivning (§ 11-29)"
+    },
+    {
+      "type": "liste",
+      "liste": [
+        [
+          "05. august 2026 – 01. januar 2999",
+          "Ny periode vurdert. Utfall: IKKE_VURDERT. Manuell vurdering: true.  Begrunnelse: Mottar ikke sykestipend."
+        ]
+      ]
+    },
+    {
+      "type": "overskrift",
+      "nivå": 3,
+      "overskrift": "Aktivitetsplikt (§ 11-7)"
+    },
+    {
+      "type": "liste",
+      "liste": [
+        [
+          "05. august 2026 – 01. januar 2999",
+          "Ny periode vurdert. Utfall: OPPFYLT. Manuell vurdering: false.  Begrunnelse: —."
+        ]
+      ]
+    },
+    {
+      "type": "overskrift",
+      "nivå": 2,
+      "overskrift": "Tilkjent ytelse"
+    },
+    {
+      "type": "overskrift",
+      "nivå": 3,
+      "overskrift": "Dagsats før gradering, før reduksjoner, og uten barnetillegg"
+    },
+    {
+      "type": "overskrift",
+      "nivå": 4,
+      "overskrift": "Perioder endret i denne behandlingen"
+    },
+    {
+      "type": "tabell",
+      "kolonner": [
+        "Periode (fom – tom)",
+        "Dagsats (G)",
+        "Grunnbeløp benyttet",
+        "Dagsats (kroner)"
+      ],
+      "rader": [
+        [
+          "05.08.2026 – 04.08.2027",
+          "– → 0,008 G",
+          "– → kr 136 549,00",
+          "– → kr 1 072,00"
+        ]
+      ]
+    },
+    {
+      "type": "overskrift",
+      "nivå": 4,
+      "overskrift": "Perioder uendret fra forrige behandling"
+    },
+    {
+      "type": "tabell",
+      "kolonner": [
+        "Periode (fom – tom)",
+        "Dagsats (G)",
+        "Grunnbeløp benyttet",
+        "Dagsats (kroner)"
+      ],
+      "rader": []
+    },
+    {
+      "type": "overskrift",
+      "nivå": 3,
+      "overskrift": "Barnetillegg før gradering og før reduksjoner"
+    },
+    {
+      "type": "tabell",
+      "kolonner": [
+        "Periode (fom – tom)",
+        "Antall barn som gir barnetillegg",
+        "Sats",
+        "Sum barnetillegg"
+      ],
+      "rader": [
+        [
+          "05.08.2026 – 04.08.2027",
+          "0",
+          "kr 38,00",
+          "kr 0,00"
+        ]
+      ]
+    },
+    {
+      "type": "overskrift",
+      "nivå": 3,
+      "overskrift": "Samordning, graderinger og reduksjoner"
+    },
+    {
+      "type": "tabell",
+      "kolonner": [
+        "Periode (fom – tom)",
+        "Samordning misc",
+        "Arbeid",
+        "Uføre",
+        "Arbeidsgiver",
+        "Meldeplikt",
+        "Insitusjon",
+        "Endelig"
+      ],
+      "rader": [
+        [
+          "05.08.2026 – 04.08.2027",
+          "-0%",
+          "-100%",
+          "-0%",
+          "-0%",
+          "-0%",
+          "×100%",
+          "0%"
+        ]
+      ]
+    },
+    {
+      "type": "overskrift",
+      "nivå": 3,
+      "overskrift": "Dagsats"
+    },
+    {
+      "type": "tabell",
+      "kolonner": [
+        "Periode (fom – tom)",
+        "Dagsats før gradering",
+        "Barnetillegg før gradering",
+        "Gradering",
+        "Endelig dagsats"
+      ],
+      "rader": [
+        [
+          "05.08.2026 – 04.08.2027",
+          "kr 1 072,00",
+          "kr 0,00",
+          "0%",
+          "kr 0,00"
+        ]
+      ]
+    },
+    {
+      "type": "overskrift",
+      "nivå": 2,
+      "overskrift": "Tidligere behandlinger av retten til og størrelsen på AAP"
+    },
+    {
+      "type": "liste",
+      "liste": []
+    },
+    {
+      "type": "overskrift",
+      "nivå": 2,
+      "overskrift": "Dokumenter"
+    },
+    {
+      "type": "overskrift",
+      "nivå": 3,
+      "overskrift": "Nye dokumenter for behandlingen"
+    },
+    {
+      "type": "tabell",
+      "kolonner": [
+        "Journalpost",
+        "Type",
+        "Mottatt",
+        "Registrert"
+      ],
+      "rader": [
+        [
+          "Journalpost 1785930391989",
+          "Søknad",
+          "05. august 2026 00:00",
+          "05. august 2026 13:46:32.021"
+        ]
+      ]
+    },
+    {
+      "type": "overskrift",
+      "nivå": 3,
+      "overskrift": "Dokumenter fra tidligere behandlinger"
+    }
+  ],
+  "header": "En header"
+}

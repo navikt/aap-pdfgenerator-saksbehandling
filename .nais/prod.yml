@@ -1,0 +1,49 @@
+apiVersion: "nais.io/v1alpha1"
+kind: "Application"
+metadata:
+  name: pdfgenerator-saksbehandling
+  namespace: aap
+  labels:
+    team: aap
+    systemkatalog.nav.no/system: SK-268
+spec:
+  image: {{ image }}
+  port: 8080
+  replicas:
+    min: 2
+    max: 6
+    scalingStrategy:
+      cpu:
+        thresholdPercentage: 80
+  liveness:
+    path: /internal/is_alive
+    timeout: 1
+    initialDelay: 5
+    periodSeconds: 5
+    failureThreshold: 30
+  readiness:
+    path: /internal/is_alive
+    timeout: 1
+    initialDelay: 5
+    periodSeconds: 5
+    failureThreshold: 30
+  leaderElection: false
+  observability:
+    logging:
+      destinations:
+        - id: loki
+        - id: elastic
+    autoInstrumentation:
+      enabled: true
+      runtime: sdk
+  resources:
+    limits:
+      memory: 1Gi
+    requests:
+      cpu: 100m
+      memory: 256Mi
+  accessPolicy:
+    inbound:
+      rules:
+        - application: behandlingsflyt
+        - application: brev-sanity-proxy

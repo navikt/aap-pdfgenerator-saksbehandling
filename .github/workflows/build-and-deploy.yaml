@@ -1,0 +1,55 @@
+name: Deploy to Dev And Prod
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - '**/*.md'
+      - '.gitignore'
+
+jobs:
+  build:
+    permissions:
+      contents: read
+      actions: read
+      checks: write
+      id-token: write
+      packages: write
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - name: Push docker image to GAR and sign image
+        uses: nais/docker-build-push@v0
+        id: docker-build-push
+        with:
+          team: aap
+          identity_provider: ${{ secrets.NAIS_WORKLOAD_IDENTITY_PROVIDER }}
+          project_id: ${{ vars.NAIS_MANAGEMENT_PROJECT_ID }}
+          tag: ${{ github.sha }}
+
+
+  deploy_to_dev:
+    name: Deploy to dev
+    permissions:
+      contents: read
+      id-token: write
+    needs: build
+    uses: navikt/aap-workflows/.github/workflows/deploy.yml@main
+    secrets: inherit
+    with:
+      cluster: dev-gcp
+      manifest: .nais/dev.yml
+
+  deploy_to_prod:
+    name: Deploy to prod
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    permissions:
+      contents: read
+      id-token: write
+    needs: [build, deploy_to_dev]
+    uses: navikt/aap-workflows/.github/workflows/deploy.yml@main
+    secrets: inherit
+    with:
+      cluster: prod-gcp
+      manifest: .nais/prod.yml

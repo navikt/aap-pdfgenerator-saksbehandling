@@ -5,4 +5,5 @@ ENV RUST_LOG=trace
 COPY templates /app/templates
 COPY fonts /app/fonts
 COPY data /app/data
-COPY data /app/resources
+COPY resources /app/resources
+COPY lib /app/lib

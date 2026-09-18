@@ -1,0 +1,142 @@
+{
+  "mottaker": {
+    "navn": "Fornavn Etternavn",
+    "ident": "12345678901",
+    "identType": "FNR"
+  },
+  "dato": "3. februar 2025",
+  "saksnummer": "SAK123",
+  "overskrift": "Overskrift H1",
+  "tekstbolker": [
+    {
+      "overskrift": "Overskrift H2 1",
+      "innhold": [
+        {
+          "overskrift": "Overskrift H3 1",
+          "blokker": [
+            {
+              "innhold": [
+                {
+                  "tekst": "Her er det et avsnitt.\n\nNytt avsnitt etter newlines.",
+                  "formattering": []
+                }
+              ],
+              "type": "AVSNITT"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "innhold": [
+        {
+          "blokker": [
+            {
+              "innhold": [
+                {
+                  "tekst": "Avsnitt i ny tekstbolk uten overskrifter, med ",
+                  "formattering": []
+                },
+                {
+                  "tekst": "fet,",
+                  "formattering": ["FET"]
+                },
+                {
+                  "tekst": "kursiv,",
+                  "formattering": ["KURSIV"]
+                },
+                {
+                  "tekst": "og",
+                  "formattering": []
+                },
+                {
+                  "tekst": "understreket",
+                  "formattering": ["UNDERSTREK"]
+                },
+                {
+                  "tekst": "tekst.",
+                  "formattering": []
+                }
+              ],
+              "type": "AVSNITT"
+            },
+            {
+              "innhold": [
+                {
+                  "tekst": "Avsnitt som et blokkelement i samme tekstbolk som avsnittet over.",
+                  "formattering": []
+                }
+              ],
+              "type": "AVSNITT"
+            }
+          ]
+        },
+        {
+          "blokker": [
+            {
+              "innhold": [
+                {
+                  "tekst": "Og et nytt avsnitt i et nytt innholdselement i tekstbolken.",
+                  "formattering": []
+                }
+              ],
+              "type": "AVSNITT"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "overskrift": "Overskrift H2 2",
+      "innhold": [
+        {
+          "blokker": [
+            {
+              "innhold": [
+                {
+                  "tekst": "Innledende tekst til en punktliste:",
+                  "formattering": []
+                }
+              ],
+              "type": "AVSNITT"
+            },
+            {
+              "innhold": [
+                {
+                  "id": "50f955d7-c828-40c8-ac2a-4e8339ce2f9b",
+                  "tekst": "Første listepunkt",
+                  "formattering": []
+                },
+                {
+                  "tekst": "Listepunkt med fet formattering",
+                  "formattering": [
+                    "FET"
+                  ]
+                },
+                {
+                  "tekst": "Listepunkt med understrek",
+                  "formattering": [
+                    "UNDERSTREK"
+                  ]
+                },
+                {
+                  "tekst": "Listepunkt i kursiv",
+                  "formattering": [
+                    "KURSIV"
+                  ]
+                }
+              ],
+              "type": "LISTE"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "signaturer": [
+    {
+      "navn": "Fornavn Etternavn",
+      "enhet": "Nav Enhet"
+    }
+  ]
+}

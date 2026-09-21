@@ -10,6 +10,7 @@ docker run \
         -v $CURRENT_PATH/fonts:/app/fonts \
         -v $CURRENT_PATH/data:/app/data \
         -v $CURRENT_PATH/resources:/app/resources \
+        -v $CURRENT_PATH/lib:/app/lib \
         -p 8089:8080 \
         -e DEV_MODE=true \
         -e REQUEST_BODY_LIMIT_BYTES=52428800 \

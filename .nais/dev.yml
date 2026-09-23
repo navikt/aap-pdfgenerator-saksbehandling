@@ -47,3 +47,4 @@ spec:
       rules:
         - application: behandlingsflyt
         - application: brev-sanity-proxy
+        - application: brev

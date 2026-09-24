@@ -6,18 +6,92 @@
   },
   "dato": "3. februar 2025",
   "saksnummer": "SAK123",
-  "overskrift": "Overskrift H1",
+  "overskrift": "Vi har innvilget søknaden din om arbeidsavklaringspenger",
+  "_kommentar": "Rekkefølgen er bevisst. Tekstbolk 1 og 2 må ligge rett etter dokumentoverskriften, mens siste rendrede overskrift fortsatt er nivå 1. Et nivåhopp fra en tekstbolk uten synlig overskrift er bare synlig der. Flyttes de lenger ned, maskeres feilen av nivå 2-overskriften foran.",
   "tekstbolker": [
     {
-      "overskrift": "Overskrift H2 1",
+      "overskrift": "",
       "innhold": [
         {
-          "overskrift": "Overskrift H3 1",
           "blokker": [
             {
               "innhold": [
                 {
-                  "tekst": "Her er det et avsnitt.\n\nNytt avsnitt etter newlines.",
+                  "tekst": "1. Tekstbolk med tom overskrift og innhold uten overskrift. Ingen overskrift skal rendres. Rendres den tomme strengen likevel, svarer Typst «heading title is empty».",
+                  "formattering": []
+                }
+              ],
+              "type": "AVSNITT"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "overskrift": "   ",
+      "innhold": [
+        {
+          "overskrift": "2. Innholdsoverskrift i tekstbolk med overskrift av bare mellomrom",
+          "blokker": [
+            {
+              "innhold": [
+                {
+                  "tekst": "Forventet nivå: 2. Innholdet skal arve tekstbolkens eget nivå, siden tekstbolken ikke rendrer noen overskrift. Regnes barnenivået ut fra en annen test enn den som styrer om overskriften vises, havner dette på nivå 3 og Typst svarer «skipped from heading level 1 to 3».",
+                  "formattering": []
+                }
+              ],
+              "type": "AVSNITT"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "innhold": [
+        {
+          "overskrift": "3. Innholdsoverskrift i tekstbolk uten overskriftsfelt",
+          "blokker": [
+            {
+              "innhold": [
+                {
+                  "tekst": "Forventet nivå: 2. Dette er tilfellet som ga den opprinnelige PDF/UA-feilen. Testen dekker også at et fravær av feltet ikke sendes til str(), som ville stoppet kompileringen.",
+                  "formattering": []
+                }
+              ],
+              "type": "AVSNITT"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "overskrift": "4. Tekstbolk med overskrift og innhold med overskrift",
+      "innhold": [
+        {
+          "overskrift": "Innholdsoverskrift under tekstbolkoverskriften",
+          "blokker": [
+            {
+              "innhold": [
+                {
+                  "tekst": "Forventet nivåsekvens: 2, 3.\n\nNytt avsnitt etter newlines.",
+                  "formattering": []
+                }
+              ],
+              "type": "AVSNITT"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "overskrift": "5. Tekstbolk med overskrift og innhold uten overskrift",
+      "innhold": [
+        {
+          "blokker": [
+            {
+              "innhold": [
+                {
+                  "tekst": "Forventet nivå: 2.",
                   "formattering": []
                 }
               ],
@@ -34,7 +108,7 @@
             {
               "innhold": [
                 {
-                  "tekst": "Avsnitt i ny tekstbolk uten overskrifter, med ",
+                  "tekst": "6. Verken tekstbolk eller innhold har overskrift. Avsnitt med ",
                   "formattering": []
                 },
                 {
@@ -87,10 +161,53 @@
       ]
     },
     {
-      "overskrift": "Overskrift H2 2",
+      "overskrift": "7. Tekstbolk med overskrift, innhold med tomme overskrifter",
       "innhold": [
         {
+          "overskrift": "",
           "blokker": [
+            {
+              "innhold": [
+                {
+                  "tekst": "Forventet nivå: 2. Den tomme innholdsoverskriften skal ikke rendres.",
+                  "formattering": []
+                }
+              ],
+              "type": "AVSNITT"
+            }
+          ]
+        },
+        {
+          "overskrift": "  ",
+          "blokker": [
+            {
+              "innhold": [
+                {
+                  "tekst": "Innholdsoverskrift av bare mellomrom skal heller ikke rendres.",
+                  "formattering": []
+                }
+              ],
+              "type": "AVSNITT"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "overskrift": "8. Årsaken til at du får arbeidsavklaringspenger fra og med 1. mars 2025",
+      "innhold": [
+        {
+          "overskrift": "Slik har vi beregnet grunnlaget for utbetalingen din fra og med mars 2025 og hvordan du klager",
+          "blokker": [
+            {
+              "innhold": [
+                {
+                  "tekst": "Alle tre overskriftsnivåene brytes over to linjer, og fanger at par.leading regnes ut fra overskriftens egen størrelse. Forventet avstand mellom grunnlinjene er 31,4 pt for dokumentoverskriften, 23,6 pt for tekstbolkoverskriften og 18,3 pt for innholdsoverskriften.",
+                  "formattering": []
+                }
+              ],
+              "type": "AVSNITT"
+            },
             {
               "innhold": [
                 {

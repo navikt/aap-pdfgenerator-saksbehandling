@@ -9,9 +9,29 @@
 
 #let spacing-gap = 16pt
 
+// PDF/UA-1 krever en dokumenttittel, og Typst regner tom streng som manglende.
+#let standard-dokumenttittel = "Brev fra Nav"
+
+#let har-overskrift(verdi) = verdi != none and str(verdi).trim() != ""
+
+// Størrelsen settes i stilkjeden, ikke på innholdet, slik at par.leading
+// regnes ut fra overskriftens størrelse og flerlinjers overskrifter
+// beholder luften mellom linjene.
+#let overskrift-med-størrelse(nivå, størrelse, innhold) = {
+  show heading: it => block(above: spacing-gap, below: spacing-gap)[
+    #set text(size: størrelse, weight: "bold")
+    #it.body
+  ]
+  heading(level: nivå, innhold)
+}
+
 #let dokument(data, body) = {
   let overskrift = data.at("overskrift", default: none)
-  let dokumenttittel = if overskrift == none { "" } else { overskrift }
+  let dokumenttittel = if har-overskrift(overskrift) {
+    str(overskrift).trim()
+  } else {
+    standard-dokumenttittel
+  }
   let er-fnr = data.at("mottaker").at("identType") == "FNR"
 
   set document(
@@ -41,19 +61,7 @@
   set text(font: "Source Sans Pro", lang: "nb", size: 12pt)
   set par(spacing: spacing-gap)
   set list(indent: 20.35pt, body-indent: 0.5em, spacing: 7.5pt, tight: false)
-
-  show heading.where(level: 1): it => {
-    set text(size: heading-1-size, weight: "bold")
-    block(above: spacing-gap, below: spacing-gap, it.body)
-  }
-  show heading.where(level: 2): it => {
-    set text(size: heading-2-size, weight: "bold")
-    block(above: spacing-gap, below: spacing-gap, it.body)
-  }
-  show heading.where(level: 3): it => {
-    set text(size: heading-3-size, weight: "bold")
-    block(above: spacing-gap, below: spacing-gap, it.body)
-  }
+  show heading: it => block(above: spacing-gap, below: spacing-gap, strong(it.body))
 
   body
 }

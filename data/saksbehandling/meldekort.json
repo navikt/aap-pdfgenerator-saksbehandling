@@ -1,0 +1,51 @@
+{
+  "ident": "11223344556",
+  "sendtInnDato": "30.03.2025",
+  "meldeDato": "28.03.2026",
+  "utførtAv": "Kjell T. Ringen",
+  "korrigert": false,
+  "begrunnelse": "Dette er begrunnelsen for korrigering",
+  "sammenlagtArbeidIPerioden": 12,
+  "meldeperiode": {
+    "fraOgMedDato": "13.03.2025",
+    "tilOgMedDato": "27.03.2025",
+    "uker": "Uke 1, 2 og 3"
+  },
+  "meldekort": {
+    "timerArbeidPerUkeIPerioden": [
+      {
+        "ukenummer": "5",
+        "fraOgMedDato": "13.03.2025",
+        "tilOgMedDato": "20.03.2025",
+        "dager": [
+          {
+            "dag": "13.03.2025",
+            "timerArbeid": 2.5
+          },
+          {
+            "dag": "15.03.2025",
+            "timerArbeid": 4
+          }
+        ]
+      },
+      {
+        "fraOgMedDato": "20.03.2025",
+        "tilOgMedDato": "27.03.2025",
+        "ukenummer": "6",
+        "dager": [
+          {
+            "dag": "20.03.2025",
+            "timerArbeid": 2
+          },
+          {
+            "dag": "24.03.2025",
+            "timerArbeid": 4
+          }
+        ]
+      }
+    ]
+  }
+}
+
+
+

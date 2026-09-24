@@ -1,3 +1,5 @@
+#import "layout.typ": har-overskrift, heading-2-size, heading-3-size, overskrift-med-størrelse
+
 #let linjeskift(tekst) = {
   str(tekst).split("\n").join(linebreak())
 }
@@ -66,33 +68,35 @@
   }
 }
 
-#let render-innhold(innhold) = {
+#let render-innhold(innhold, heading-nivå) = {
   let overskrift = innhold.at("overskrift", default: none)
 
-  if overskrift != none {
-    heading(level: 3, overskrift)
+  if har-overskrift(overskrift) {
+    overskrift-med-størrelse(heading-nivå, heading-3-size, overskrift)
   }
   for blokk in innhold.at("blokker") {
     render-blokk(blokk)
   }
 }
 
-#let render-tekstbolk(tekstbolk, etter-innhold: false) = {
+#let render-tekstbolk(tekstbolk, etter-innhold: false, heading-nivå: 2) = {
   let overskrift = tekstbolk.at("overskrift", default: none)
+  let vis-overskrift = har-overskrift(overskrift)
+  let heading-nivå-for-barn = if vis-overskrift { heading-nivå + 1 } else { heading-nivå }
 
-  if overskrift != none {
+  if vis-overskrift {
     if etter-innhold {
       v(10pt, weak: false)
     }
-    heading(level: 2, overskrift)
+    overskrift-med-størrelse(heading-nivå, heading-2-size, overskrift)
   }
   for innhold in tekstbolk.at("innhold") {
-    render-innhold(innhold)
+    render-innhold(innhold, heading-nivå-for-barn)
   }
 }
 
-#let render-tekstbolker(tekstbolker) = {
+#let render-tekstbolker(tekstbolker, heading-nivå: 2) = {
   for (indeks, tekstbolk) in tekstbolker.enumerate() {
-    render-tekstbolk(tekstbolk, etter-innhold: indeks > 0)
+    render-tekstbolk(tekstbolk, etter-innhold: indeks > 0, heading-nivå: heading-nivå)
   }
 }

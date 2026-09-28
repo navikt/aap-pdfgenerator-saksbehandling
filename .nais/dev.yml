@@ -11,10 +11,10 @@ spec:
   port: 8080
   replicas:
     min: 1
-    max: 2
+    max: 3
     scalingStrategy:
       cpu:
-        thresholdPercentage: 90
+        thresholdPercentage: 80
   liveness:
     path: /internal/is_alive
     timeout: 1
@@ -38,10 +38,10 @@ spec:
       runtime: sdk
   resources:
     limits:
-      memory: 256Mi
+      memory: 512Mi
     requests:
       cpu: 100m
-      memory: 120Mi
+      memory: 224Mi
   accessPolicy:
     inbound:
       rules:

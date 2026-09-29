@@ -6,13 +6,19 @@
   #it.description
 ]
 
+// Compiled once at module scope instead of per wrap-cell call/cell, since
+// these patterns are identical on every invocation.
+#let date-time-prefix-pattern = regex("^\\d{2}\\.\\d{2}\\.\\d{4} \\d{2}:")
+#let long-token-pattern = regex("[^\\s]{12,}")
+#let identifier-pattern = regex("[0-9_]")
+
 #let wrap-cell(value) = {
-    if value.match(regex("^\\d{2}\\.\\d{2}\\.\\d{4} \\d{2}:")) != none {
+    if value.match(date-time-prefix-pattern) != none {
         return value.split(" ").map(wrap-cell).join(linebreak())
     }
-    value.replace(regex("[^\\s]{12,}"), match => {
+    value.replace(long-token-pattern, match => {
         // Allow identifiers to wrap without inserting visible hyphens into their values.
-        if match.text.match(regex("[0-9_]")) != none {
+        if match.text.match(identifier-pattern) != none {
             match.text.clusters().join("\u{200b}")
         } else {
             match.text

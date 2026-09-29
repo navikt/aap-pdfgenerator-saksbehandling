@@ -13,6 +13,12 @@
 #let identifier-pattern = regex("[0-9_]")
 
 #let wrap-cell(value) = {
+    // Neither pattern below can match a value shorter than 12 UTF-8 bytes
+    // (date-time-prefix-pattern needs 14, long-token-pattern needs 12), so
+    // short cells (most list/table values) skip both regexes entirely.
+    if value.len() < 12 {
+        return value
+    }
     if value.match(date-time-prefix-pattern) != none {
         return value.split(" ").map(wrap-cell).join(linebreak())
     }

@@ -14,7 +14,7 @@
 
 #let overskrift(nivå, størrelse, innhold, over: seksjon-gap, under: uke-gap) = {
   show heading: it => block(above: over, below: under)[
-    #set text(size: størrelse, weight: "bold")
+    #set text(size: størrelse, weight: "semibold")
     #it.body
   ]
   heading(level: nivå, innhold)
@@ -37,6 +37,13 @@
   tekst.replace(".", ",")
 }
 
+#let doctitle(data) = {
+  if data.at("meldekort").at("timerArbeidPerUkeIPerioden").len() == 0 {
+    "Registrering av meldedato (AAP) av saksbehandler/veileder"
+  } else {
+    "Innsending av meldekort (AAP) av saksbehandler/veileder"
+  }
+}
 #let dokumentoverskrift(data, uker) = {
   if uker.len() == 0 {
     "Registrering av meldeplikt " + str(data.at("meldeDato"))
@@ -69,10 +76,11 @@
 #let uker = data.at("meldekort", default: (:)).at("timerArbeidPerUkeIPerioden", default: ())
 #let meldeperiode = data.at("meldeperiode", default: none)
 #let tittel = dokumentoverskrift(data, uker)
+#let dokumenttittel = doctitle(data)
 
 // PDF/UA-1 krever dokumenttittel, alt-tekst på bilder og overskrifter uten
 // nivåhopp. pdfgenrs håndhever standarden, så brudd stopper kompileringen.
-#set document(title: tittel, description: tittel, author: "Nav")
+#set document(title: dokumenttittel, description: dokumenttittel, author: "Nav")
 #set page(
   paper: "a4",
   margin: (top: sidemarg, bottom: sidemarg, left: sidemarg, right: sidemarg),

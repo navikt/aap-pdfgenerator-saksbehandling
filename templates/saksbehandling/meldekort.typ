@@ -65,13 +65,16 @@
   #par[Uke #uke.at("ukenummer") #uke.at("fraOgMedDato") - #uke.at("tilOgMedDato")]
   #pad(left: dag-innrykk)[
     #for dag in uke.at("dager", default: ()) {
-      par[#dag.at("dag"): #formater-timer(dag.at("timerArbeid")) timer]
+      let timer = dag.at("timerArbeid", default: none)
+      if timer != none {
+        par[#dag.at("dag"): #formater-timer(timer) timer]
+      }
     }
   ]
 ]
 
 #let uker = data.at("meldekort", default: (:)).at("timerArbeidPerUkeIPerioden", default: ())
-#let meldeperiode = data.at("meldeperiode")
+#let meldeperiode = data.at("meldeperiode", default: none)
 #let tittel = dokumentoverskrift(data, uker)
 #let dokumenttittel = doctitle(data)
 
@@ -99,7 +102,7 @@
 ]
 
 #overskrift(1, heading-1-size, tittel, over: 0pt)
-#if data.at("meldekort").at("timerArbeidPerUkeIPerioden").len() != 0 {
+#if meldeperiode != none {
   par(text(size: heading-3-size)[
     #meldeperiode.at("fraOgMedDato") - #meldeperiode.at("tilOgMedDato")
   ])

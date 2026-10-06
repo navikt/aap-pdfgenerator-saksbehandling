@@ -64,7 +64,7 @@
 ]
 
 #let uker = data.at("meldekort", default: (:)).at("timerArbeidPerUkeIPerioden", default: ())
-#let meldeperiode = data.at("meldeperiode")
+#let meldeperiode = data.at("meldeperiode", default: none)
 #let tittel = dokumentoverskrift(data, uker)
 
 // PDF/UA-1 krever dokumenttittel, alt-tekst på bilder og overskrifter uten
@@ -91,9 +91,11 @@
 ]
 
 #overskrift(1, heading-1-size, tittel, over: 0pt)
-#par(text(size: heading-3-size)[
-  #meldeperiode.at("fraOgMedDato") - #meldeperiode.at("tilOgMedDato")
-])
+#if meldeperiode != none {
+  par(text(size: heading-3-size)[
+    #meldeperiode.at("fraOgMedDato") - #meldeperiode.at("tilOgMedDato")
+  ])
+}
 
 #seksjon("Meldedato", par(data.at("meldeDato")))
 

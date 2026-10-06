@@ -58,7 +58,10 @@
   #par[Uke #uke.at("ukenummer") #uke.at("fraOgMedDato") - #uke.at("tilOgMedDato")]
   #pad(left: dag-innrykk)[
     #for dag in uke.at("dager", default: ()) {
-      par[#dag.at("dag"): #formater-timer(dag.at("timerArbeid")) timer]
+      let timer = dag.at("timerArbeid", default: none)
+      if timer != none {
+        par[#dag.at("dag"): #formater-timer(timer) timer]
+      }
     }
   ]
 ]

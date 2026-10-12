@@ -17,7 +17,7 @@
     "overskrift" : "Rettighetsperiode"
   }, {
     "type" : "liste",
-    "liste" : [ [ "Begrunnelse", "Bruker var på sykehus" ] ]
+    "liste" : [ [ "Begrunnelse", "Bruker var på\u0002 sykehus" ] ]
   }, {
     "type" : "liste",
     "liste" : [ [ "Rett utover søknadsdato", "Ja" ], [ "Startdato", "19. oktober 2025" ] ]

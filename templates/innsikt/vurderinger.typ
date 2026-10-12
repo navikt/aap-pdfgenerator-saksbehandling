@@ -1,4 +1,17 @@
-#let data = json("/data/innsikt/vurderinger.json")
+// Kontrolltegn (unntatt \t, \n og \r) har ingen glyf i noen font og bryter PDF/A og PDF/UA.
+#let kontrolltegn = regex("[\\x00-\\x08\\x0B\\x0C\\x0E-\\x1F\\x7F]")
+
+#let rens(verdi) = if type(verdi) == str {
+    verdi.replace(kontrolltegn, "")
+} else if type(verdi) == array {
+    verdi.map(rens)
+} else if type(verdi) == dictionary {
+    verdi.pairs().map(((nøkkel, v)) => (nøkkel, rens(v))).to-dict()
+} else {
+    verdi
+}
+
+#let data = rens(json("/data/innsikt/vurderinger.json"))
 
 #show terms.item: it => block(width: 100%)[
   #text(weight: "semibold")[#it.term:]

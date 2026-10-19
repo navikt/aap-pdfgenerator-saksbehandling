@@ -1,4 +1,4 @@
-FROM ghcr.io/navikt/pdfgenrs:1.0.44
+FROM ghcr.io/navikt/pdfgenrs:1.0.45
 
 ENV RUST_LOG=trace
 ENV COMPILE_TIMEOUT_SECONDS=60

@@ -10,7 +10,8 @@
 }
 
 #let render-tekstsegment(segment) = {
-  let innhold = linjeskift(segment.at("tekst"))
+  let tekst = segment.at("tekst").replace("\u{f0a7}", "").replace("\t", " ")
+  let innhold = linjeskift(tekst)
   let formatteringer = segment.at("formattering")
   let støttede-formatteringer = ("FET", "KURSIV", "UNDERSTREK")
 

@@ -28,6 +28,25 @@
       ]
     },
     {
+      "overskrift": "",
+      "innhold": [
+        {
+          "blokker": [
+            {
+              "innhold": [
+                {
+                  "_kommentar": "Tester tegnbehandling før PDF-eksport: U+F0A7 fjernes, tabulator erstattes med mellomrom, og linjeskift beholdes. Forventet tekst er «Føretter. Før etter.» etter innledningen. Eksport med PDF/A-2a og PDF/UA-1 skal lykkes.",
+                  "tekst": "Tegntest: Før\uF0A7etter. Før\tetter.\nDenne linjen skal fortsatt stå på en ny linje.",
+                  "formattering": []
+                }
+              ],
+              "type": "AVSNITT"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "overskrift": "   ",
       "innhold": [
         {
